@@ -21,6 +21,7 @@ import android.widget.TextView;
 
 import com.sduran.durandroid.R;
 import com.sduran.durandroid.adapters.MenuAdapter;
+import com.sduran.durandroid.fragments.ContactFragment;
 import com.sduran.durandroid.fragments.ProfessionalFragment;
 import com.sduran.durandroid.utils.Events;
 
@@ -190,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new ProfessionalFragment();
                     break;
                 case 3:
-                    selectedFragment = new ProfessionalFragment();
+                    selectedFragment = new ContactFragment();
                     break;
                 default:
                     selectedFragment = new ProfessionalFragment();
