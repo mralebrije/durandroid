@@ -1,27 +1,32 @@
 package com.sduran.durandroid.fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.sduran.durandroid.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Created by sduranware on 23/09/2017.
  */
 
-public class ProfessionalFragment extends Fragment {
+public class EmailFragment extends Fragment {
 
-    public ProfessionalFragment() {
+    public EmailFragment() {
         // Required empty public constructor
     }
 
-    public static ProfessionalFragment newInstance(String param1, String param2) {
-        ProfessionalFragment fragment = new ProfessionalFragment();
+    public static EmailFragment newInstance(String param1, String param2) {
+        EmailFragment fragment = new EmailFragment();
         return fragment;
     }
 
@@ -34,6 +39,10 @@ public class ProfessionalFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_professional, container, false);
+        View view = inflater.inflate(R.layout.fragment_email, container, false);
+        ButterKnife.bind(this, view);
+
+        return view;
     }
+
 }

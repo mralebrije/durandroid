@@ -3,13 +3,17 @@
     <!-- Start translatable Strings-->
     <!--Titles-->
     <string name="title_appName">Durandroid</string>
-
     <string-array name="titles_navDrawer">
         <item>Professional</item>
         <item>Academic</item>
         <item>Personal</item>
         <item>Contact</item>
     </string-array>
+
+    <string name="title_socialMedia">Social Media</string>
+    <string name="title_locationPlace">Location</string>
+    <string name="title_email">Email</string>
+    <string name="title_phone">Phone</string>
 
     <!--Details-->
     <string name="detail_drawerOpen">Open navigation drawer</string>

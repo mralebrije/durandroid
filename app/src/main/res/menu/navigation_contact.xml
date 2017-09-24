@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/id_action_email"
+        android:title="@string/title_email"
+        android:icon="@mipmap/ic_email" />
+    <item android:id="@+id/id_action_location"
+        android:title="@string/title_locationPlace"
+        android:icon="@mipmap/ic_location" />
+    <item android:id="@+id/id_action_phone"
+        android:title="@string/title_phone"
+        android:icon="@mipmap/ic_call" />
+    <item android:id="@+id/id_action_socialMedia"
+        android:title="@string/title_socialMedia"
+        android:icon="@mipmap/ic_group" />
+</menu>
