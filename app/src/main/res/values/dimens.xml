@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+     https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <!--General Margins-->
+    <dimen name="large_margin">10dp</dimen>
+    <dimen name="medium_margin">5dp</dimen>
+    <dimen name="small_margin">2dp</dimen>
+
+    <!--View Sizes-->
+    <dimen name="layout_margin">4dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="editText_height">45dp</dimen>
+    <dimen name="view_margin">5dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="empty_height">0dp</dimen>
+    <dimen name="header_height">178dp</dimen>
+    <dimen name="headerInfo_height">65dp</dimen>
+    <dimen name="drawer_restingElevation">16dp</dimen>
+    <dimen name="drawer_listViewWidth">240dp</dimen>
+    <dimen name="imageView_profileSize">90dp</dimen>
+
+    <!--Title Sizes-->
+    <dimen name="h1">30dp</dimen>
+    <dimen name="h2">25dp</dimen>
+    <dimen name="h3">20dp</dimen>
+    <dimen name="h4">15dp</dimen>
+    <dimen name="h5">12dp</dimen>
+
+    <!--Text Sizes-->
+    <dimen name="text1">10dp</dimen>
+    <dimen name="text2">8dp</dimen>
+    <dimen name="text3">4dp</dimen>
+    <dimen name="text4">2dp</dimen>
+</resources>
