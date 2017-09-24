@@ -24,7 +24,8 @@ public class ContactFragment extends Fragment {
     @BindView(R.id.id_bnv_contactMenu)
     BottomNavigationView bottomNavigationView;
 
-    private int selectedSection = R.id.id_action_email;
+    private static int DEFAULT_TAB = R.id.id_action_email;
+    private int selectedSection;
 
     public ContactFragment() {
         // Required empty public constructor
@@ -70,6 +71,9 @@ public class ContactFragment extends Fragment {
                 return true;
             }
         });
+
+        selectItem(-1);
+
         return view;
     }
 
@@ -96,6 +100,7 @@ public class ContactFragment extends Fragment {
                     selectedFragment = new SocialMediaFragment();
                     break;
                 default:
+                    selectedSection = DEFAULT_TAB;
                     selectedFragment = new EmailFragment();
                     break;
             }
@@ -103,7 +108,7 @@ public class ContactFragment extends Fragment {
             // Insert the fragment by replacing any existing fragment
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.id_fl_contactContentFrame, selectedFragment)
+                    .replace(R.id.id_sv_contactContentFrame, selectedFragment)
                     .commit();
         }
     }

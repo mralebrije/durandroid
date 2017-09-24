@@ -25,6 +25,7 @@
     <dimen name="drawer_listViewWidth">240dp</dimen>
     <dimen name="imageView_profileSize">90dp</dimen>
     <dimen name="bottomNavigation_height">56dp</dimen>
+    <dimen name="link_height">30dp</dimen>
 
     <!--Title Sizes-->
     <dimen name="h1">30dp</dimen>

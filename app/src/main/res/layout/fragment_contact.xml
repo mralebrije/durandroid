@@ -15,9 +15,10 @@
         design:menu="@menu/navigation_contact" />
 
 
-    <FrameLayout
+    <ScrollView
+        android:fillViewport="true"
         android:layout_above="@id/id_bnv_contactMenu"
-        android:id="@+id/id_fl_contactContentFrame"
+        android:id="@+id/id_sv_contactContentFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
