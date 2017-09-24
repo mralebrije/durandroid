@@ -15,3 +15,9 @@ Main Dependencies
 * Circle Image View
 * Butterknife
 * Eventbus
+
+Naming Conventions
+
+* IDs
+* Strings
+* Views

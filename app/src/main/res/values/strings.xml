@@ -1,6 +1,27 @@
 <resources>
 
     <!-- Start translatable Strings-->
+
+    <!-- Strings Naming Convention - It was detected 6 types of Strings through a general Android App project, this types are gonna help us to give
+    to translator a good context about our used Strings, allowing in this way to get a more precise translation when G11n (i18n and l10N) process is required.
+
+            1. Titles
+            2. Details
+            3. Actions
+            4. Plurals
+            5. Variables
+            6. Placeholders
+    Use the proper prefix in your String key name and then add the String context, you must match the next pattern
+
+            $type$_$context$
+
+            E.g.
+                <string name="title_myProfile">My Profile</string>
+                <string name="detail_myProfile">In this section you can see your profile information</string>
+                <string name="action_editProfile">Edit Profile</string>
+                <string name="placeholder_name">Type here your public name</string>
+    -->
+
     <!--Titles-->
     <string name="title_appName">Durandroid</string>
     <string-array name="titles_navDrawer">
