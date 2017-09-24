@@ -10,6 +10,7 @@
 
 
         <TextView
+            style="@style/NoteText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -24,17 +25,24 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/LabelText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/title_emailFrom" />
+                android:text="@string/title_yourName" />
 
             <EditText
                 android:id="@+id/id_et_from"
                 style="@style/EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/placeholder_email"
-                android:inputType="textEmailAddress" />
+                android:hint="@string/placeholder_yourName"/>
+
+
+            <TextView
+                style="@style/LabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_message" />
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -64,6 +72,7 @@
         </LinearLayout>
 
         <Button
+            android:drawableTop="@mipmap/ic_email"
             android:id="@+id/id_btn_sendMessage"
             style="@style/ButtonPrimary"
             android:layout_width="match_parent"

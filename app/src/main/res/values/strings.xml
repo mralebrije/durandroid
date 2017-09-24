@@ -31,23 +31,35 @@
         <item>Professional</item>
         <item>Academic</item>
         <item>Personal</item>
-        <item>Contact</item>
+        <item>Contact me</item>
     </string-array>
 
     <string name="title_socialMedia">Social Media</string>
     <string name="title_locationPlace">Location</string>
     <string name="title_email">Email</string>
     <string name="title_phone">Phone</string>
-    <string name="title_emailFrom">From</string>
+    <string name="title_yourName">Your Awesome Name!</string>
+    <string name="title_message">Message</string>
+    <string name="title_emailSubject">Durandroid</string>
 
     <!--Details-->
+    <string-array name="details_phrases">
+        <item>Never make permanent decisions</item>
+        <item>Knowledge is having the right answer. Intelligence is asking the right question</item>
+        <item>I am Strong, Because i’ve been weak</item>
+        <item>If plan A didn’t work, the alphabet has 25 more letters!</item>
+    </string-array>
+
+    <string name="detail_sendEmail">Send mail...</string>
+    <string name="detail_thankYou">Thank You</string>
+    <string name="detail_feedbackEmailSent">I will be reading your email as soon as possible!</string>
     <string name="detail_drawerOpen">Open navigation drawer</string>
     <string name="detail_drawerClose">Close navigation drawer</string>
-    <string name="detail_emailWelcomeMessage">Hey! I am happy to receive your message, normally it takes me 3 laboral days to respond you, if you need a faster respose feel free to contact me in other of my contact methods, thank you!</string>
+    <string name="detail_emailWelcomeMessage">Hey! I am happy to receive your message, normally it takes me 3 laboral days to respond you, if you need a faster respose feel free to contact me in another of my contact methods, thank you!</string>
 
     <!--Placeholders-->
-    <string name="placeholder_email">michael.jackson@gmail.com</string>
-    <string name="placeholder_emailMessage">Hi Duran, I would like to talk with you about...</string>
+    <string name="placeholder_yourName">Mr. Michael Jackson | Mrs. Beyoncé</string>
+    <string name="placeholder_emailMessage">Hi Duran I am an awesome person trying to contact another awesome person, I would like to talk with you about...</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

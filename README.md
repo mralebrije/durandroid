@@ -22,6 +22,7 @@ Clone the git project and open it in Android Studio, since we do not have any sp
 * Circle Image View
 * Butterknife
 * Eventbus
+* Lovely Dialog
 
 ###### Naming Conventions
 
