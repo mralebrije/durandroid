@@ -23,6 +23,7 @@ Clone the git project and open it in Android Studio, since we do not have any sp
 * Butterknife
 * Eventbus
 * Lovely Dialog
+* Loombok
 
 ###### Naming Conventions
 

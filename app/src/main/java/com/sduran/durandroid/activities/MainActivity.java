@@ -10,12 +10,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 
@@ -23,7 +19,7 @@ import com.sduran.durandroid.R;
 import com.sduran.durandroid.adapters.MenuAdapter;
 import com.sduran.durandroid.fragments.ContactFragment;
 import com.sduran.durandroid.fragments.ProfessionalFragment;
-import com.sduran.durandroid.utils.Events;
+import com.sduran.durandroid.helpers.Events;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -40,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.id_dl_navDrawer)
     DrawerLayout mDrawerLayout;
-    @BindView(R.id.id_lv_leftDrawer)
+    @BindView(R.id.id_rv_leftDrawer)
     RecyclerView mDrawerList;
     @BindView(R.id.id_tb_mainToolbar)
     Toolbar toolbar;
@@ -73,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
         setToolbar();
         setToggle();
-        initializeMenuListView();
+        initializeMenuRecycler();
 
-        selectItem(selectedSection);
+        selectItem(-1);
 
     }
 
@@ -159,14 +155,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void initializeMenuListView() {
+    private void initializeMenuRecycler() {
 
         mLayoutManager = new LinearLayoutManager(this);
         mDrawerList.setLayoutManager(mLayoutManager);
 
         mDrawerList.setHasFixedSize(true);
 
-        // Set the adapter for the list view
+        // Set the adapter for the recycler view
         menuAdapter = new MenuAdapter(mDrawerList, menuTitles, menuIcons, getString(R.string.sduran_name), getString(R.string.sduran_email), profilePhoto, DEFAULT_SECTION);
         mDrawerList.setAdapter(menuAdapter);
     }
@@ -194,6 +190,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new ContactFragment();
                     break;
                 default:
+                    selectedSection = DEFAULT_SECTION;
                     selectedFragment = new ProfessionalFragment();
                     break;
             }

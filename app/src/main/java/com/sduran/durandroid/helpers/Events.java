@@ -1,4 +1,4 @@
-package com.sduran.durandroid.utils;
+package com.sduran.durandroid.helpers;
 
 /**
  * Created by sduranware on 23/09/2017.

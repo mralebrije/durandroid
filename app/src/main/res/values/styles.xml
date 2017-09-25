@@ -25,6 +25,22 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="HeaderText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:padding">@dimen/medium_margin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/medium_margin</item>
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:padding">@dimen/medium_margin</item>
+        <item name="android:layout_marginTop">@dimen/medium_margin</item>
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+        <item name="android:textColor">?android:attr/textColorTertiary</item>
+    </style>
+
     <style name="EditText" parent="Base.Widget.AppCompat.EditText">
         <item name="android:background">@android:color/white</item>
         <item name="android:layout_height">@dimen/editText_height</item>
